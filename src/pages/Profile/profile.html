@@ -9,8 +9,9 @@
 <ion-content padding>
     <!--The user profolio-->
     <ion-icon name="logo-octocat" item-end large></ion-icon><br/>
-    <p>Welcome John Doe.</p>
+    Welcome {{username}}.
     <p>More profile features are coming!</p>
     <!--The submit button-->
+    <button ion-button icon-start color="dark" round outline (click)="navigateToCharity()">My Charities</button>
     <button ion-button icon-start color="dark" round outline (click)="navigateToLogin()">Log out</button>
 </ion-content>
