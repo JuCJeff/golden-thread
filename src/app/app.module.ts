@@ -11,6 +11,7 @@ import { RegistrationPage } from '../pages/Registration/registration'
 import { ProfilePage } from '../pages/Profile/profile'
 import { UsersPage } from '../pages/UserData/users';
 import { CharityListPage } from '../pages/CharityList/charityList';
+import { CharityPage } from '../pages/Charity/charity';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CharityListPage } from '../pages/CharityList/charityList';
     RegistrationPage,
     ProfilePage,
     UsersPage,
-    CharityListPage
+    CharityListPage,
+    CharityPage
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,8 @@ import { CharityListPage } from '../pages/CharityList/charityList';
     RegistrationPage,
     ProfilePage,
     UsersPage,
-    CharityListPage
+    CharityListPage,
+    CharityPage
   ],
   providers: [
     StatusBar,

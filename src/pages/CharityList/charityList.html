@@ -9,7 +9,13 @@
 <ion-content padding>
 
     <!--Different categories of charities-->
-    <ion-list>
+    <ion-list inset>
+        <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+            {{ item }}
+        </button>
+    </ion-list>
+
+    <!-- <ion-list>
         <ion-list-header>
             Animal Charities
         </ion-list-header>
@@ -46,6 +52,6 @@
             Arts and Culture Charities
         </ion-list-header>
         <ion-item>The Art Fund</ion-item>
-    </ion-list>
+    </ion-list> -->
 
 </ion-content>
