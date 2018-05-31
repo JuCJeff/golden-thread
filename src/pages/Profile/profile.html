@@ -7,11 +7,45 @@
 </ion-header>
 
 <ion-content padding>
-    <!--The user profolio-->
-    <ion-icon name="logo-octocat" item-end large></ion-icon><br/>
-    Welcome {{username}}.
-    <p>More profile features are coming!</p>
+    <!--The user profolio generals-->
+    <ion-icon name="logo-octocat" item-end large id="octocat"></ion-icon>
+    <br/>
+    <p class="welcome">Welcome {{username}}!</p>
+
+    <!--Customer information-->
+    <img src="assets/imgs/profile_pic.jpeg" id="profile">
+    <!-- <p>{{user.id}}</p> !!To be addressed-->
+    <pre class="profile">BC73935828      zma67@wisc.edu     Jeff Ma</pre>
+    <p>{{username}}</p>
+    <ion-grid>
+        <ion-row class="orange">
+            <ion-col>$3000</ion-col>
+            <ion-col>7</ion-col>
+            <ion-col>$1300</ion-col>
+        </ion-row>
+        <ion-row class="tabs">
+            <ion-col>Money Raised</ion-col>
+            <ion-col>My Charity</ion-col>
+            <ion-col>Most Money</ion-col>
+        </ion-row>
+    </ion-grid>
+
+    <!--Pie chart for cutomers' donation-->
+    <p class="subtitles">Donation Profolio</p>
+    <div class="chart-container" style="position: relative;">
+        <ion-card>
+            <ion-card-header>
+                Pie Chart
+            </ion-card-header>
+            <ion-card-content>
+                <canvas #pieCanvas id="chart"></canvas>
+            </ion-card-content>
+        </ion-card>
+    </div>
+
     <!--The submit button-->
-    <button ion-button icon-start color="dark" round outline (click)="navigateToCharity()">My Charities</button>
-    <button ion-button icon-start color="dark" round outline (click)="navigateToLogin()">Log out</button>
+    <div class="buttons">
+        <button ion-button icon-start color="dark" round outline (click)="navigateToCharity()">My Charities</button>
+        <button ion-button icon-start color="dark" round outline (click)="navigateToLogin()">Log out</button>
+    </div>
 </ion-content>

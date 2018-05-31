@@ -10,10 +10,16 @@
 
     <!--Different categories of charities-->
     <ion-list inset>
+        <!--Search Bar where function await to be added-->
+        <ion-header>
+            <ion-toolbar color="Light">
+                <ion-searchbar (input)="getItems($event)"></ion-searchbar>
+            </ion-toolbar>
+        </ion-header>
+
         <button ion-item *ngFor="let charity of charities" (click)="navigateToCharity(charity)">
             {{ charity.name }}
         </button>
     </ion-list>
 
-    </ion-content>
-    
+</ion-content>
