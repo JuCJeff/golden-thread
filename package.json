@@ -29,7 +29,7 @@
     "gigatables-react": "^2.7.0",
     "ionic-angular": "3.9.2",
     "ionicons": "3.0.0",
-    "react": "^16.4.0",
+    "react": "^0.14.9",
     "react-dom": "^16.4.0",
     "react-svg-piechart": "^2.1.0",
     "recharts": "^1.0.0-beta.10",
