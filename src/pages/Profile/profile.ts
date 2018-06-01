@@ -2,6 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { CharityListPage } from '../CharityList/charityList';
 import { Chart } from 'chart.js';
+import { PaymentPage } from '../Payment/payment';
 // import { User } from '../../Models/user';
 
 
@@ -59,4 +60,7 @@ export class ProfilePage {
     this.navCtrl.push(CharityListPage);
   }
 
+  navigateToPayment() {
+    this.navCtrl.push(PaymentPage);
+  }
 }
