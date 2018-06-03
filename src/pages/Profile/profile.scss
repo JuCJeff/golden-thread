@@ -1,30 +1,16 @@
 page-profile {
-    ion-icon {
-        font-size: 3em;
-    }
 
     .content{
         background-color: white;
     }
 
+    //Head area related
+    ion-icon {
+        font-size: 3em;
+    }
+
     #octocat{
         color: #ff3e00;
-    }
-
-    .profile{
-        font-weight: 300;
-        font-size: 0.8em;
-    }
-
-    .orange{
-        color: #ff3e00;
-        font-size: 1.5em;
-        font-weight: bold;
-    }
-
-    .tabs{
-        font-weight: 300;
-        font-size: 1.2em;
     }
 
     .welcome{
@@ -34,15 +20,54 @@ page-profile {
         margin-top: 0em;
     }
 
+    .profile{
+        font-weight: 300;
+        font-size: 0.8em;
+    }
+
     #profile{
         border-radius: 0.5em;
         width: 30em;
         margin-top: -1em;
     }
 
-    //Bar chart
+    .infotab{
+        font-weight: 400;
+        font-size: 0.8em;
+        color: rgba(0,0,0,0.5);
+    }
+
+    #username{
+        font-weight: 300;
+        font-size: 1.5em;
+        margin-top: -0.5em auto -0.5em;
+    }
+    //
+
+    //Tabs Related
+    .tabs{
+        font-weight: 300;
+        font-size: 1.2em;
+    }
+
+    $tabs-ios-tab-icon-color-active: #ff3e00;
+    //
+
+    .orange{
+        color: #ff3e00;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    //Bar chart related
     .subtitles{
         font-size: 1.5em;
+    }
+    //
+
+    //Fabs related
+    ion-fab {
+        color: #ff3e00;
     }
 
     .ios, .md {
@@ -55,9 +80,5 @@ page-profile {
                 font-weight: bold;
             }   
         }    
-    }
-
-    canvas#chart.chartjs-render-moniter{
-        width: 2em;
     }
 }

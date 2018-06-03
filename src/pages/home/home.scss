@@ -1,13 +1,19 @@
 page-home {
+    #cover{
+        border-radius: 0.5em;
+        width: 30em;
+    }
+
     .content{
-        background-color: #ff3e00;
+        // background-color: #ff3e00;
+        background-color: white;
     }
 
     .button-md{
-        color: white;
+        color: black;
     }
 
     .scroll-content{
-        color: white;
+        color: black;
     }
 }

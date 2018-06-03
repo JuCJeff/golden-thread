@@ -13,6 +13,7 @@ import { UsersPage } from '../pages/UserData/users';
 import { CharityListPage } from '../pages/CharityList/charityList';
 import { CharityProfilePage } from '../pages/CharityProfile/charityProfile';
 import { PaymentPage } from '../pages/Payment/payment';
+import { TabsPage } from '../pages/Tabs/tabs';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { PaymentPage } from '../pages/Payment/payment';
     UsersPage,
     CharityListPage,
     CharityProfilePage,
-    PaymentPage
+    PaymentPage,
+    TabsPage
   ],
   imports: [
     BrowserModule,
@@ -40,7 +42,8 @@ import { PaymentPage } from '../pages/Payment/payment';
     UsersPage,
     CharityListPage,
     CharityProfilePage,
-    PaymentPage
+    PaymentPage,
+    TabsPage
   ],
   providers: [
     StatusBar,

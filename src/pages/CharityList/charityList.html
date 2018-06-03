@@ -12,9 +12,12 @@
     <ion-list inset>
         <!--Search Bar where function await to be added-->
         <ion-header>
-            <ion-toolbar color="Light">
                 <ion-searchbar (input)="getItems($event)"></ion-searchbar>
-            </ion-toolbar>
+                <ion-list>
+                    <ion-item *ngFor="let item of items">
+                        {{ item }}
+                    </ion-item>
+                </ion-list>
         </ion-header>
 
         <button ion-item *ngFor="let charity of charities" (click)="navigateToCharity(charity)">

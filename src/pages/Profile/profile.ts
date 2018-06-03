@@ -3,6 +3,7 @@ import { NavController, NavParams } from 'ionic-angular';
 import { CharityListPage } from '../CharityList/charityList';
 import { Chart } from 'chart.js';
 import { PaymentPage } from '../Payment/payment';
+import { User } from '../../Models/user';
 // import { User } from '../../Models/user';
 
 
@@ -15,20 +16,19 @@ export class ProfilePage {
   public username: string;
   public password: string;
 
-  // public user: User;
+  public user: User = new User();
 
   @ViewChild('pieCanvas') pieCanvas;
 
   pieChart: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    // this.user = this.navParams.get("user");
   }
 
   ionViewDidLoad() {
     this.username = this.navParams.get("username");
     this.password = this.navParams.get("psasword");
-    // this.user = this.navParams.get("user");
+    this.user = this.navParams.get("user");
     this.pieChart = new Chart(this.pieCanvas.nativeElement, {
 
       type: 'pie',
