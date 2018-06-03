@@ -4,6 +4,7 @@ import { CharityListPage } from '../CharityList/charityList';
 import { Chart } from 'chart.js';
 import { PaymentPage } from '../Payment/payment';
 import { User } from '../../Models/user';
+import { LoginPage } from '../Login/login';
 // import { User } from '../../Models/user';
 
 
@@ -53,7 +54,7 @@ export class ProfilePage {
   }
 
   navigateToLogin() {
-    this.navCtrl.pop();
+    this.navCtrl.setRoot(LoginPage);
   }
 
   navigateToCharity() {

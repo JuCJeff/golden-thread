@@ -7,6 +7,26 @@
 </ion-header>
 
 <ion-content padding>
+    <ion-fab top right edge>
+        <button ion-fab color="light">
+            <ion-icon ios="ios-heart" md="md-heart" color="main"></ion-icon>
+        </button>
+        <ion-fab-list side="bottom">
+            <button ion-fab color="light">
+                <ion-icon name="bonfire" color="main"></ion-icon>
+            </button>
+            <button ion-fab color="light">
+                <ion-icon name="flame" color="main"></ion-icon>
+            </button>
+        </ion-fab-list>
+    </ion-fab>
     <p>This is your supported charity {{charity.name}}.</p>
     <p>{{charity.description}}</p>
+    <p class="notification">Bonfire for monthly donation.
+        <ion-icon name="bonfire" color="main"></ion-icon>
+    </p>
+    <p class="notification">Flame for a one time support
+        <ion-icon name="flame" color="main"></ion-icon>
+    </p>
+    <p class="notification">Thank you so much for being a charity hero!</p>
 </ion-content>
