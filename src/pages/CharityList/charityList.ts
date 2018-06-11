@@ -22,36 +22,43 @@ export class CharityListPage {
     charity1.id = 1;
     charity1.name = "ACCESS College Foundation";
     charity1.description = "You are donating $5 for ACCESS monthly.";
+    charity1.img = "assets/imgs/Charity1.jpeg";
 
     var charity2 = new Charity();
     charity2.id = 2;
     charity2.name = "Animal Equality";
     charity2.description = "You are donating $10 for animal equality monthly.";
+    charity2.img = "assets/imgs/Charity2.jpg";
 
     var charity3 = new Charity();
     charity3.id = 3;
     charity3.name = "AIDS United";
     charity3.description = "You are donating $5 for AIDS United.";
+    charity3.img = "assets/imgs/Charity3.jpg";
 
     var charity4 = new Charity();
     charity4.id = 4;
     charity4.name = "Global Fund for Children";
     charity4.description = "You are donating $3 for Global Fund for Children.";
+    charity4.img = "assets/imgs/Charity4.png";
 
     var charity5 = new Charity();
     charity5.id = 5;
     charity5.name = "Rainforest Alliance";
     charity5.description = "You are donating $2 for Rainforest Alliance monthly.";
+    charity5.img = "assets/imgs/Charity5.jpg";
 
     var charity6 = new Charity();
     charity6.id = 6;
     charity6.name = "The Art Fund";
     charity6.description = "You are donating $10 for The Art Fund monthly.";
+    charity6.img = "assets/imgs/Charity6.jpg";
 
     var charity7 = new Charity();
     charity7.id = 7;
-    charity7.name = "The Human League";
-    charity7.description = "You are donating $5 for The Human League monthly.";
+    charity7.name = "WWF";
+    charity7.description = "You are donating $5 for The WWF monthly.";
+    charity7.img = "assets/imgs/Charity7.jpg";
 
     // Add our charities instances to our collection of charities
     this.charities.push(charity1);

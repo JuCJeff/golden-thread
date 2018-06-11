@@ -21,9 +21,9 @@
         </ion-header>
 
         <button ion-item *ngFor="let charity of charities" (click)="navigateToCharity(charity)">
-            <!-- <ion-thumbnail item-start>
-                <img src="assets/imgs/Charity1.jpeg">
-            </ion-thumbnail> -->
+            <ion-thumbnail item-start small>
+                <img src="{{charity.img}}">
+            </ion-thumbnail>
             {{ charity.name }}
         </button>
     </ion-list>
